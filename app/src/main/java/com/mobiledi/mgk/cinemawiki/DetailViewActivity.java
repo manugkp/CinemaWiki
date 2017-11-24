@@ -40,7 +40,7 @@ public class DetailViewActivity extends AppCompatActivity {
         GetXMLTask task = new GetXMLTask();
         // Execute the task
         task.execute(new String[] { imagePath });
-        movieTitle.setText("Title: "+title);
+        movieTitle.setText("Title:"+title);
         releaseYear.setText("Release Date: "+year);
         rating.setText("Rating: "+popularity);
         description.setText("Overview: "+decs);

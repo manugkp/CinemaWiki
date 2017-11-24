@@ -7,7 +7,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 app:layout_behavior="@string/appbar_scrolling_view_behavior"
 tools:showIn="@layout/activity_home"
-android:background="#318CE7"
+android:background="#e5c1bf"
 tools:context="com.mobiledi.mgk.cinemawiki.HomeActivity">
 
 <android.support.v7.widget.RecyclerView

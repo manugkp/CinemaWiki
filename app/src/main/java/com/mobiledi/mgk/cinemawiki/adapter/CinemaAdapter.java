@@ -41,7 +41,7 @@ public class CinemaAdapter extends RecyclerView.Adapter<CinemaAdapter.CinemaView
             super(v);
             moviesLayout = (LinearLayout) v.findViewById(R.id.movies_layout);
             movieTitle = (TextView) v.findViewById(R.id.title);
-            rating = (TextView) v.findViewById(R.id.rating);
+           // rating = (TextView) v.findViewById(R.id.rating);
             poster=(ImageView)v.findViewById(R.id.img_android);
         }
         public void setClickListener(ClickListener itemClickListener) {
@@ -69,7 +69,7 @@ public class CinemaAdapter extends RecyclerView.Adapter<CinemaAdapter.CinemaView
         holder.movieTitle.setText("Movie Title : "+cinema.get(position).getTitle());
          // holder.data.setText(cinema.get(position).getReleaseDate());
         //  holder.movieDescription.setText(cinema.get(position).getOverview());
-        holder.rating.setText("Rating: "+cinema.get(position).getVoteAverage().toString());
+        //holder.rating.setText("Rating: "+cinema.get(position).getVoteAverage().toString());
         Picasso.with(context).load("http://image.tmdb.org/t/p/w185/"+cinema.get(position).getPosterPath()).resize(120,60).into(holder.poster);
 
     }
